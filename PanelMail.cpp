@@ -20,8 +20,6 @@ PanelMail::~PanelMail()
 void PanelMail::renew()
 {
     QString address = ui->cB_currentEMail->currentText();
-
-    //for removing
 }
 
 void PanelMail::writeMail()
