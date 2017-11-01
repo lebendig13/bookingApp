@@ -20,6 +20,12 @@ PanelMail::~PanelMail()
 void PanelMail::renew()
 {
     QString address = ui->cB_currentEMail->currentText();
+
+    QString textMail = "";
+
+    //...reading the mail
+
+    ui->tE_mail->setText(textMail);
 }
 
 void PanelMail::writeMail()
