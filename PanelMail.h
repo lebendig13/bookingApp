@@ -2,7 +2,9 @@
 #define PANELMAIL_H
 
 #include <QWidget>
-#include <QtNetwork>
+#include <QTextBrowser>
+
+#include "MailPage.h"
 
 namespace Ui {
 class PanelMail;
@@ -22,6 +24,9 @@ public slots:
 
 private:
     QString mailAddress();
+
+private:
+    MailPage* mailPage;
 
 private:
     Ui::PanelMail *ui;

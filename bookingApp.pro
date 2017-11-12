@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui network
+QT       += core gui network webenginewidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -14,11 +14,17 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         MainWindow.cpp \
-    PanelMail.cpp
+    PanelMail.cpp \
+    MailPage.cpp
 
 HEADERS  += MainWindow.h \
     PanelMail.h \
-    globals.h
+    globals.h \
+    MailPage.h
 
 FORMS    += MainWindow.ui \
-    PanelMail.ui
+    PanelMail.ui \
+    MailPage.ui
+
+RESOURCES += \
+    jquery.qrc
